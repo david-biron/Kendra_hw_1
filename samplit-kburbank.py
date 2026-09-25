@@ -1,11 +1,12 @@
 import pandas as pd
-import sys, random
+import sys
+import random
 
-assert len(sys.argv) == 2
+assert len(sys.argv)==2
 
 filename = sys.argv[1]
 with open(filename, 'r') as file:
     for line in file:
-        if random.random() < 0.01:
+        if random.random()<0.01:
             print(line)
 
